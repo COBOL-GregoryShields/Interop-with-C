@@ -1,6 +1,6 @@
 # Interop-with-C
 
-This is example code to show how it is possible to interoperate between C and GnuCOBOL.
+This is example code to show how it is possible to interoperate between C and GnuCOBOL.  
 
 
 ## Code
@@ -10,4 +10,16 @@ This is a C language code file that calls code located in a GnuCOBOL module.
 
 query.cbl  
 This is a COBOL code file which returns a string value to the caller.  
+
+
+## Compiler commands
+
+cobc -x -fimplicit-init call-query.c query.c  
+
+
+## Hyperlinks
+
+[Use another language to call a function](https://rosettagit.org/drafts/use-another-language-to-call-a-function/)  
+
+
 
