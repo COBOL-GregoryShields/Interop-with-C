@@ -4,17 +4,17 @@ extern int Query(char * Data, size_t * Length);
 
 int main(int argc, char * argv [])
 {
-    char     Buffer [1024];
-    size_t   Size = sizeof (Buffer);
+    char     buffer [1024];
+    size_t   size = sizeof (buffer);
 
-    if (Query(Buffer, &Size) == 0)
+    if (Query(buffer, &size) == 0)
     {
         printf ("failed to call Query\n");
     }
     else
     {
-        char * Ptr = Buffer;
-        while (Size-- > 0) putchar(*Ptr++);
+        char * ptr = buffer;
+        while (size-- > 0) putchar(*ptr++);
         putchar ('\n');
     }
 }
