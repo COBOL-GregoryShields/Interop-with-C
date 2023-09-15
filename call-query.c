@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-extern int Query (char * Data, size_t * Length);
+extern int Query(char * Data, size_t * Length);
 
-int main (int argc, char * argv [])
+int main(int argc, char * argv [])
 {
     char     Buffer [1024];
     size_t   Size = sizeof (Buffer);
