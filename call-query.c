@@ -7,7 +7,7 @@ int main (int argc, char * argv [])
     char     Buffer [1024];
     size_t   Size = sizeof (Buffer);
 
-    if (0 == Query(Buffer, &Size))
+    if (Query(Buffer, &Size) == 0)
     {
         printf ("failed to call Query\n");
     }

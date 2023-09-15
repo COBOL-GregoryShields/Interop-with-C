@@ -14,7 +14,7 @@ This is a COBOL code file which returns a string value to the caller.
 
 ## Compiler commands
 
-cobc -x -fimplicit-init call-query.c query.c  
+cobc -x -fimplicit-init call-query.c query.cbl -o call-query.exe
 
 
 ## Hyperlinks
